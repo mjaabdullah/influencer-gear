@@ -6,6 +6,7 @@
 :root {
     --primary-color: #3A3A3A;
     --background-color: #FFFFFF;
+    --btn-bg-color: #E02C6D;
 }
 
 /* for font */
@@ -17,6 +18,89 @@
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
 }
+
+/* common styles */
+.container {
+    max-width: 1200px;
+    padding: 40px;
+    margin: 0 auto;
+}
+.display-flex {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--btn-bg-color);
+    color: var(--background-color);
+    font-size: 1rem;
+    width: fit-content;
+}
+
+/* body style */
 body {
     background-color: var(--background-color);
+}
+
+/* header style */
+header {
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+header ul {
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+header ul a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+header ul a i {
+    color: #000000;
+}
+
+/* hero section styles */
+.hero-section {
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-text  {
+    color: var(--primary-color);
+    max-width: 580px;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero-text h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.hero-text p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.hero-img {
+    display: flex;
+    align-items: center;
+    width: 29.7rem;
+    height: 29.7rem;
+    background: url(../images/Circle\ design.svg);
+    background-size: cover;
+    background-position: center;
+}
+.hero-section img {
+    max-width: 95%;
+    height: auto;
 }
