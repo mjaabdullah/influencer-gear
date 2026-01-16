@@ -104,3 +104,79 @@ header ul a i {
     max-width: 95%;
     height: auto;
 }
+/* brand group */
+.brand-group {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    gap: 60px;
+    margin: 50px auto;
+}
+.brand-group img {
+    min-width: 100px;
+}
+
+/* popular section */
+.popular-collection {
+    position: relative;
+    margin-bottom: 100px;
+}
+.popular-collection .popular-title {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 30px auto;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.popular-collection .popular-card-parent {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(329px + 30px));
+    gap: 35px;
+}
+.popular-card-parent .popular-card {
+    width: 329px;
+    height: 476px;
+    padding: 17px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.3);
+}
+.popular-card .card-text {
+    flex-direction: column;
+    gap: 6px;
+    color: var(--primary-color);
+    
+}
+.card-text h3 {
+    font-size: 1.5rem;
+    margin-top: 6px;
+}
+.card-text .price {
+    font-size: 1.4rem;
+}
+.card-text .rating-wrapper {
+    gap: 8px;
+    align-items: center;
+}
+.rating-wrapper .stars {
+    color: #FB8200;
+    font-size: 1rem;
+}
+.card-text .rating-number,
+.card-text .card-description {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.card-text .card-description {
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    max-width: 196px;
+}
+
+.popular-collection button {
+    background-color: transparent;
+    color: var(--btn-bg-color);
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
