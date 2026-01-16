@@ -180,3 +180,51 @@ header ul a i {
     bottom: 0;
     right: 40px;
 }
+
+/* featured section */
+.featured-section {
+    gap: 90px;
+}
+
+.featured-section img {
+    max-width: 440px;
+    height: 270px;
+}
+.featured-section .featured-text {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    max-width: 610px;
+}
+.featured-text h1 {
+    font-size: 2.38rem;
+    font-weight: 700;
+    color: #000000;
+}
+.featured-text p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+
+/* footer styles */
+footer {
+    background-color: #0a0826;
+    padding: 50px 0;
+}
+.footer-item {
+    color: #FFFFFF;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-item ul {
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.footer-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
